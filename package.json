@@ -15,7 +15,7 @@
   "author": "JunSeob Kim",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon --exec babel-node init.js --delay 2"
+    "start": "nodemon --exec babel-node init.js --delay 4"
   },
   "devDependencies": {
     "nodemon": "^1.19.2"
