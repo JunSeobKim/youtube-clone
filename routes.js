@@ -30,7 +30,7 @@ const routes = {
   changePassword: CHANGE_PASSWORD,
   videos: VIDEOS,
   upload: UPLOAD,
-  videoDetailL: VIDEO_DETAIL,
+  videoDetail: VIDEO_DETAIL,
   editVideo: EDIT_VIDEO,
   deleteVideo: DELETE_VIDEO
 };
