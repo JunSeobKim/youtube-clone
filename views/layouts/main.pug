@@ -1,9 +1,10 @@
 doctype html
 html
     head
-        title WeTube
+        link(rel="stylesheet",href="https://use.fontawesome.com/releases/v5.10.1/css/all.css",integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe",crossorigin="anonymous")
+        title #{pageTitle} | #{siteName}
     body
+        include ../partials/header
         main
-        block content
-        footer
-            span &copy; WuTube
+            block content
+        include ../partials/footer
