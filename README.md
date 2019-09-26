@@ -2,4 +2,15 @@
 
 Cloning Youtube with Vanilla and NodeJS
 
-VideoRouter and userRouter are not working now.
+## Pages:
+
+- [x] Home
+- [x] Join
+- [x] Login
+- [x] Search
+- User Detail
+- Edit Profile
+- Change Password
+- Upload
+- Video Detail
+- Edit Video
