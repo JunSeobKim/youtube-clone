@@ -21,13 +21,9 @@ export const postJoin = async (req, res, next) => {
       await User.register(user, password);
       next();
     } catch (error) {
-      console.log(error);
+      res.redirect(routes.home);
     }
-
-    // To Do: Log user in
-    res.redirect(routes.home);
   }
-  res.render("join", { pageTitle: "Join" });
 };
 
 export const getLogin = (req, res) =>
