@@ -6,13 +6,15 @@ import {
   logout,
   postJoin,
   postLogin,
-  getLogin
+  getLogin,
+  getMe
 } from "../controllers/userController";
+import { onlyPublic } from "../middlewares";
 
 const globalRouter = express.Router();
 
-globalRouter.get(routes.join, getJoin);
-globalRouter.post(routes.join, postJoin);
+globalRouter.get(routes.join, onlyPublic, getJoin);
+globalRouter.post(routes.join, onlyPublic, postJoin, postLogin);
 
 globalRouter.get(routes.login, getLogin);
 globalRouter.post(routes.login, postLogin);
@@ -20,5 +22,7 @@ globalRouter.post(routes.login, postLogin);
 globalRouter.get(routes.home, home);
 globalRouter.get(routes.search, search);
 globalRouter.get(routes.logout, logout);
+
+globalRouter.get(routes.me, getMe);
 
 export default globalRouter;
