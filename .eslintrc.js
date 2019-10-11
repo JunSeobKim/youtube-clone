@@ -3,7 +3,7 @@ module.exports = {
     es6: true,
     node: true
   },
-  extends: ["eslint:recommended", "airbnb-base", "prettier"],
+  extends: ["eslint:recommended", "airbnb-base"],
   globals: {
     Atomics: "readonly",
     SharedArrayBuffer: "readonly"
