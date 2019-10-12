@@ -3,7 +3,7 @@ import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import passport from "passport";
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 import session from "express-session";
 import MongoStore from "connect-mongo";
 import cookieParser from "cookie-parser";

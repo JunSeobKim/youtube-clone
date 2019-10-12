@@ -12,5 +12,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  rules: { "no-console": "off" }
+  rules: {
+    "no-console": "off",
+    quotes: "off",
+    "comma-dangle": "off",
+    "linebreak-style": "off",
+    "implicit-arrow-linebreak": "off"
+  }
 };
